@@ -1,0 +1,22 @@
+{{ define "new" }}
+<!DOCTYPE html>
+<html>
+    <head>
+        {{ template "header" }}
+        {{ template "menu"  }}
+    </head>
+    <body>
+        <div class="content">
+    
+            <div class="container">
+                <h2 class="mb-5">New Name and City</h2>
+        <form  method="POST" action="insert">
+          <input type="text" name="name" placeholder="Name" /><br />
+          <input  type="text" name="city" placeholder="City"/><br />
+          <input  type="submit" value="Save user" />
+    </div>
+    </div>
+        
+</div>
+        {{ template "footer" }}
+{{end}}

@@ -1,0 +1,20 @@
+{{ define "show" }}
+<!DOCTYPE html>
+<html>
+    <head>
+        {{ template "header" }}
+        {{ template "menu"  }}
+    </head>
+    <body>
+        <div class="content">
+    
+            <div class="container">
+              <h2 class="mb-5">Employee NIP : {{ .Id }}</h2>
+      <p>Name: {{ .Name }}</p>
+      <p>City:  {{ .City }}</p>
+      <br /> 
+      <a href="/edit?id={{ .Id }}" class="button">Edit</a>
+            </div>
+        </div>
+  {{ template "Footer" }}
+{{ end }}

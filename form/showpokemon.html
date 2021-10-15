@@ -1,0 +1,49 @@
+{{define "showpokemon"}}
+<!DOCTYPE html>
+<html>
+    <head>
+        {{ template "header" }}
+        {{ template "menu"  }}
+    </head>
+    <body>
+        <div class="content">
+    
+            <div class="container">
+              <h2 class="mb-5">Master Employee</h2>
+              
+        
+              <div class="table-responsive">
+        
+                <table class="table table-striped custom-table">
+                  <thead>
+                    <tr>
+                      
+                      <th scope="col">Pokemon</th>
+                      <th scope="col">Action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {{ range . }}
+                    <tr scope="row">
+                      <td>{{ .Name }}</td>
+                      <td><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                        width="24" height="24"
+                        viewBox="0 0 172 172"
+                        style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#f1c40f"><path d="M43,14.33333c-7.90483,0 -14.33333,6.4285 -14.33333,14.33333v114.66667c0,7.90483 6.4285,14.33333 14.33333,14.33333h44.86166c-3.02433,-4.32867 -5.37388,-9.15183 -6.91472,-14.33333h-37.94694v-114.66667h50.16667v35.83333h35.83333v14.33333c4.98083,0 9.78967,0.75911 14.33333,2.11361v-23.61361l-43,-43zM129,93.16667c-20.06667,0 -35.83333,15.76667 -35.83333,35.83333c0,20.06667 15.76667,35.83333 35.83333,35.83333c7.16667,0 14.33893,-2.1556 20.07226,-5.73893l12.8916,12.9056l10.03614,-10.03614l-12.9056,-12.8916c3.58333,-5.73333 5.73893,-12.9056 5.73893,-20.07226c0,-20.06667 -15.76667,-35.83333 -35.83333,-35.83333zM129,107.5c12.18333,0 21.5,9.31667 21.5,21.5c0,12.18333 -9.31667,21.5 -21.5,21.5c-12.18333,0 -21.5,-9.31667 -21.5,-21.5c0,-12.18333 9.31667,-21.5 21.5,-21.5z"></path></g></g></svg>
+                      <img src="https://img.icons8.com/color/24/000000/edit--v1.png"/>
+                      <img src="https://img.icons8.com/external-kiranshastry-gradient-kiranshastry/24/000000/external-delete-miscellaneous-kiranshastry-gradient-kiranshastry.png"/><td>
+                        
+                    </tr>
+                  {{ end }}
+                  </tbody>
+                </table>
+              </div>
+        
+        
+            </div>
+        
+          </div>
+          <a href="https://icons8.com/icon/86556/view">View icon by Icons8</a>
+          <a href="https://icons8.com/icon/12082/edit">Edit icon by Icons8</a>
+        {{ template "footer" }}
+{{end}}
