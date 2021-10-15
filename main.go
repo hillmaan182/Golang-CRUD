@@ -113,6 +113,8 @@ func Show(w http.ResponseWriter, r *http.Request) {
 	}
 	tpl.ExecuteTemplate(w, "show", emp)
 	defer db.Close()
+
+	//var commitbranc string
 }
 
 func New(w http.ResponseWriter, r *http.Request) {
